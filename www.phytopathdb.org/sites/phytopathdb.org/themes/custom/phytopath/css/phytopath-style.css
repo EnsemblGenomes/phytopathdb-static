@@ -1,0 +1,1555 @@
+/* $Id: fusion-starter-style.css,v 1.1.2.7 2010/07/04 01:51:31 sociotech Exp $ */
+
+/*@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
+/*@import url('http://fonts.googleapis.com/css?family=Exo 2');
+
+/* Websidte grid sizes
+/* grid widths */
+.grid12-1 {width: 107px;}
+.grid12-2 {width: 214px;}
+.grid12-3 {width: 321px;}
+.grid12-4 {width: 428px;}
+.grid12-5 {width: 535px;}
+.grid12-6 {width: 642px;}
+.grid12-7 {width: 749px;}
+.grid12-8 {width: 856px;}
+.grid12-9 {width: 963px;}
+.grid12-10 {width: 1070px;}
+.grid12-11 {width: 1177px;}
+.grid12-12 {width: 1284px;}
+
+/* Websidte grid sizes
+/* grid widths */
+.grid12-1 {width: 107px;}
+.grid12-indent-1 {margin-left: 107px;}
+.grid12-indent-2 {margin-left: 214px;}
+.grid12-indent-3 {margin-left: 321px;}
+.grid12-indent-4 {margin-left: 428px;}
+.grid12-indent-5 {margin-left: 535px;}
+.grid12-indent-6 {margin-left: 642px;}
+.grid12-indent-7 {margin-left: 749px;}
+.grid12-indent-8 {margin-left: 856px;}
+.grid12-indent-9 {margin-left: 963px;}
+.grid12-indent-10 {margin-left: 1070px;}
+.grid12-indent-11 {margin-left: 1177px;}
+.grid12-indent-12 {margin-left: 1284px;}
+
+/* gutters (2 x margin) */
+.block .inner {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+body,
+div.full-width {
+  min-width: 1284px;
+}
+
+html {
+  background-color: #f6f4da;
+}
+
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+/* Add general site styling here for typography and background */
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+
+.font-size-12 {
+  font-size: 100%;
+}
+
+body {
+  font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
+}
+
+/* Default link styles - separate a:visited for a different visited link style */
+a,
+a:link,
+a:visited {color: #a33600
+}
+
+/* Hover/active link styles. Don't forget :focus for accessibility */
+a:hover,
+a:focus,
+a:active {
+}
+
+* {font-family: "Helvetica",Arial,sans-serif !important;}
+
+div.content-messages-inner div.messages {
+  background-color: #f6f4da;
+  border-color: ;
+  color: ;
+  -webkit-box-shadow: 5px 5px 5px #888888;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #888888;
+  -moz-border-radius: 10px;
+}
+
+
+/* Specific Typography
+-------------------------------------------------------------- */
+#site-name {
+  font-size: 300%;
+  line-height: 150%;
+}
+
+.footer-message {
+  font-size: 90%;
+}
+
+
+/* HTML Elements
+-------------------------------------------------------------- */
+body {margin:0;
+    padding:0;
+    height:100%;   }
+
+/* Site Info
+-------------------------------------------------------------- */
+/* Wrapper around logo, site name, and slogan */
+.header-site-info span {
+  display: block;
+}
+
+/* Add float here to put logo and site name side by side, also add margins as
+  needed */
+#logo {
+}
+
+/* Link and hover styles for site name */
+#site-name a:link,
+#site-name a:visited,
+#site-name a:hover,
+#site-name a:active {
+}
+
+/* Typography for site slogan */
+#slogan {
+}
+
+
+/* Regions
+
+  Classes (.region-name) should always be used instead of IDs (#region-name) so
+  that Skinr styles can override them with a class later
+-------------------------------------------------------------- */
+
+/* All Regions
+-------------------------------------------------------------- */
+/* By default this wrapper is set to 100% width and centered -- override here to
+  narrow wrapper or align left or right */
+.page {
+}
+
+/* The 0 values here remove padding and spacing at the bottom of the page.
+  Remove to add a gap at the very bottom of the page */
+.page-inner {
+  border: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+/* Header Regions
+-------------------------------------------------------------- */
+/* Header Top region to the bottom of Header region */
+/* For full-width header background, add background image/color here */
+
+.header-group-wrapper {background-color: #298f00; height:35px; background-image: url(/sites/phytopathdb.org/files/images/menu_grad.png);
+
+}
+
+.header-group {
+
+}
+
+/* Header Top region which sits above the header */
+/* Works well with inline login or inline menu block style */
+
+div.header-top-inner div.inner div.content p a img {
+  background-image: url('/sites/phytopathdb.org/files/images/phytopathlogo.png');
+}
+
+.header-top {background-color: #F6F4DA; background-image: url(/sites/phytopathdb.org/files/images/header_background.png); height:100px ; background-repeat:no-repeat;
+}
+
+.header-top-wrapper { background-color: #F6F4DA ; height:100px }
+
+
+/* Primary Menu
+/-------------------------------------------------------------- */
+/* Add general styles for primary menu here, such as typography, borders, floats,
+  or spacing above/below */
+.primary-menu {
+}
+
+/* styles for Superfish primary menu */
+.primary-menu-inner ul.sf-menu {
+}
+
+/* Link style for top level menu items, add padding here */
+.primary-menu-inner ul.sf-menu a,
+.primary-menu-inner ul.sf-menu a:visited  {
+}
+
+.primary-menu-inner ul.sf-menu a:hover,
+.primary-menu-inner ul.sf-menu a:active,
+.primary-menu-inner ul.sf-menu a:focus {
+}
+
+/* These are the top level menu items, add border-right here for separators */
+.primary-menu-inner ul.sf-menu li {
+}
+
+/* Add border-right: 0; here to remove separator on last menu item */
+.primary-menu-inner ul.sf-menu li.last {
+}
+
+/* Style for container of dropdown, add background or border */
+.primary-menu-inner ul.sf-menu ul {
+}
+
+/* Style for individual dropdown menu items, add border-bottom for separators */
+.primary-menu-inner ul.sf-menu li li {
+  background-color: #fff;
+}
+
+.ppdb-primary-menu-dropdown {
+  z-index: 20;
+}
+
+.primary-menu-inner ul.sf-menu li li.last {
+
+}
+
+.primary-menu-inner ul.sf-menu li li li {
+}
+
+/* Style for hover of dropdown menu items (add background-color here) */
+.primary-menu-inner ul.sf-menu li ul li:hover,
+.primary-menu-inner ul.sf-menu li ul li.sfHover {
+}
+
+
+/* Secondary menu
+-------------------------------------------------------------- */
+/* This menu usually appears in the header as a set of simple text links */
+.secondary-menu {
+}
+
+/* Set general style for menu here -- background, alignment, etc. */
+.secondary-menu-inner ul.links {
+}
+
+/* Add a border-right here for a separator */
+.secondary-menu-inner ul.links li {
+}
+
+/* Add border-right: 0; here to remove right separator on last menu item */
+.secondary-menu-inner ul.links li.last {
+}
+
+/* Styles for links */
+.secondary-menu-inner ul.links li a:link,
+.secondary-menu-inner ul.links li a:visited {
+  padding: 3px;
+}
+
+.secondary-menu-inner ul.links li a:hover,
+.secondary-menu-inner ul.links li a:focus,
+.secondary-menu-inner ul.links li a.active {
+}
+
+
+/* Header - Search
+-------------------------------------------------------------- */
+.search-box {
+}
+
+.search-box-inner {
+}
+
+.search-box-inner form#search-theme-form {
+}
+
+.search-box-inner input#edit-search-theme-form-header {
+}
+
+
+/*  Preface Regions
+-------------------------------------------------------------- */
+/* The Preface Top region sits between the header and the Main Area
+ (columns, sidebars, and main content).  The Preface Bottom region
+ is inside the Main Area. */
+.preface-top-wrapper {
+}
+
+.preface-top {
+}
+
+.preface-top-inner {
+}
+
+.preface-bottom {
+}
+
+.preface-bottom-inner {
+}
+
+
+/*  Main Area (content + sidebars + preface bottom + postscript top)
+-------------------------------------------------------------- */
+.main-wrapper {height:100%; min-height:560px; 
+  background: white;
+}
+
+
+/* Sidebar Regions
+-------------------------------------------------------------- */
+/* Sidebar widths can be controlled through theme settings */
+.sidebar-first {
+}
+
+.sidebar-last {
+}
+
+
+/* Content Regions
+-------------------------------------------------------------- */
+.content-top {
+}
+
+.content {
+}
+
+.content-inner {
+}
+
+.content-bottom {
+}
+
+/* This region only appears on full node pages. It's useful for ads or other
+  content between the body of the node and its comments */
+.node-bottom {
+}
+
+/*  Postscript & Footer Regions
+-------------------------------------------------------------- */
+.postscript-top {
+}
+
+.postscript-top-inner {
+}
+
+.postscript-bottom-wrapper {
+}
+
+.postscript-bottom {
+}
+
+.postscript-bottom-inner {
+}
+
+#footer-wrapper {
+  vertical-align: middle;
+  background-color: #f6f4da; 
+  height:100%; 
+	height: 150px; bottom:0;
+}
+
+#footer-wrapper p img {
+  vertical-align: middle;
+}
+
+.footer {
+}
+
+.footer-inner {
+}
+
+.footer-message-wrapper {
+}
+
+.footer-message {
+}
+
+.footer-message-inner {
+}
+
+.footer-message-text {
+}
+
+
+/* Page titles
+/-------------------------------------------------------------- */
+/* Page and full node titles */
+h1.title { padding-bottom:10px;
+}
+
+
+/* Default node styles
+/-------------------------------------------------------------- */
+/* Change unpublished and preview colors for dark background themes */
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+
+/* Typography for node titles */
+h2.title {
+}
+
+/* Colors and styles for linked node titles, ie. teaser listing at /node */
+h2.title a:link,
+h2.title a:visited {
+}
+
+h2.title a:hover,
+h2.title a:focus,
+h2.title a:active {
+}
+
+h2.pane-title a:link,
+h2.pane-title a:visited {
+  color:#278700;
+}
+
+h2.pane-title a:hover {
+  color:#a33600;
+  text-decoration: none;
+}
+
+/* Separators and padding for node teasers */
+.teaser {
+}
+
+/* Author/date info */
+.meta {
+}
+
+.submitted {
+}
+
+/* Links for nodes (taxonomy, commenting, read more, etc) */
+.node ul.links li {
+}
+.node ul.links a {
+}
+
+/* Only more/read more links */
+div.node .read-more a,
+div.node .more-link a {
+}
+
+/* Drupal Messages
+/-------------------------------------------------------------- */
+/* General style for all errors/messages (border, padding, etc.) */
+div.content-messages div.messages,
+div.content-help div.help {
+}
+
+/* Status messages: green */
+div.content-messages-inner div.status {
+}
+
+/* Warning messages: yellow */
+div.content-messages-inner div.warning {
+}
+
+/* Error messages: red */
+div.content-messages-inner div.error {
+}
+
+/* Help messages: blue */
+div.content-help-inner div.help {
+}
+
+/* Error that appears when a required form field is not filled out */
+.form-item input.messages,
+.form-item textarea.messages,
+.form-item select.messages {
+  border: 1px solid #aa1144 !important;
+}
+
+/* "New" text and required form field asterisk (default = red) */
+.marker,
+.form-required {
+  color: #aa1144;
+}
+
+
+/* Default block title styles
+/-------------------------------------------------------------- */
+h2.block-title {
+}
+
+
+/* Breadcrumbs
+-------------------------------------------------------------- */
+.breadcrumbs {
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited {
+}
+
+
+/* Tab Menus
+/-------------------------------------------------------------- */
+#content-tabs {
+  background-color: transparent;
+  float: left; /* LTR */
+  padding: 0;
+  margin-bottom: 0.8em;
+}
+
+#content-tabs ul.primary,
+#content-tabs ul.secondary {
+  /*border-bottom: 1px solid #000;*/
+  clear: both;
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+/*
+#content-tabs ul.secondary {
+  border-bottom: 1px solid #555;
+  margin-top: 10px;
+  text-transform: lowercase;
+}
+*/
+#content-tabs ul.primary li,
+#content-tabs ul.secondary li {
+  border-style: none;
+  display: inline;
+  float: left; /* LTR */
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+#content-tabs ul.primary li a:link,
+#content-tabs ul.primary li a:visited,
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  background-color: transparent;
+  border: none;
+  color: #278700;
+  float: left; /* LTR */
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 6px 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  color: #555;
+}
+
+#content-tabs ul.primary li a.active:link,
+#content-tabs ul.primary li a.active:visited {
+  /*border-bottom: 4px solid #000;*/
+  color: #901818;
+  padding-bottom: 2px;
+}
+
+#content-tabs ul.secondary li a.active:link,
+#content-tabs ul.secondary li a.active:visited {
+  border-bottom: 4px solid #555;
+  color: #777;
+  padding-bottom: 2px;
+}
+
+#content-tabs ul.primary li a:hover,
+#content-tabs ul.primary li a:focus,
+#content-tabs ul.secondary li a:hover,
+#content-tabs ul.secondary li a:focus {
+  border-bottom: 4px solid #777;
+  color: #777;
+  padding-bottom: 2px;
+}
+
+/* Pagers
+-------------------------------------------------------------- */
+ul.pager {
+}
+
+ul.pager li {
+}
+
+ul.pager a,
+ul.pager li.pager-current {
+  border-color: #333;
+}
+
+ul.pager li.pager-current {
+  background-color: #777;
+  color: #fff;
+}
+
+ul.pager a:hover,
+ul.pager a:active,
+ul.pager a:focus {
+  background-color: #777;
+  border-color: #333;
+  color: #fff;
+}
+
+/* Forms
+/-------------------------------------------------------------- */
+/* Typography and backgrounds for all form buttons */
+
+#pid-query-builder #edit-submit {
+  padding: 3px 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 80px;
+}
+
+
+
+#pid-query-builder #content-inner .form-submit {
+  font-size: 100%;
+}
+
+.form-submit {
+  font-size: 100%;
+}
+
+/* Hover style for form buttons */
+form input.form-submit:hover,
+form input.form-submit.hover,
+form input.form-submit:focus {
+}
+
+/* Typography, background, borders, padding for form fields */
+.form-item input,
+.form-item select,
+.form-item textarea {
+}
+
+/* Remove backgrounds and border on radios and checkboxes */
+.form-item .form-radio,
+.form-item .form-checkbox {
+  background: none;
+  border: none !important;
+}
+
+/* Fieldset wrapper around groups of form elements -- add border here */
+fieldset {
+}
+
+/* Typography and spacing for legend of fieldsets */
+fieldset legend {
+}
+
+/* Link style for legend of fieldsets */
+fieldset legend,
+legend.collapse-processed,
+legend.collapse-processed a:link,
+legend.collapse-processed a:visited {
+}
+
+/* Custom icons on (open) collapsible fieldsets */
+html.js fieldset.collapsible legend a:link,
+html.js fieldset.collapsible legend a:visited {
+}
+
+/* Custom icons on (closed) collapsible fieldsets */
+html.js fieldset.collapsed legend a:link,
+html.js fieldset.collapsed legend a:visited {
+}
+
+#biomart-species-list .form-item label.option {
+ font-style:italic;
+}
+
+#biomart-species-list {
+  float: left;
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+#phibase-species-list {
+  float: left;
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+#edit-species-checkall-wrapper {
+  float: left;
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+#edit-species-tree-wrapper {
+/*  float: left; */
+}
+
+/*
+div {
+ border-style: dashed;
+ border-width: 1px;
+}
+*/
+
+/* Tables
+-------------------------------------------------------------- */
+table {
+  border-color: transparent;
+  line-height: 95%;
+}
+
+tr.odd {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+tr.even {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Body of tables */
+
+.page-query div.gene-item tbody td {
+  border: solid;
+  padding: 6px;
+  border-width: 1px;
+  border-color: #f3d0be;
+}
+
+
+/* Header of tables */
+thead th,
+th {
+  border-color: transparent;
+}
+
+.page-query table {
+  font-size: 80%;
+}
+
+.page-query thead th,
+.page-query th {
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #a33600;
+}
+
+th.views-field-field-picture-fid {
+  display: none;
+  border: none;
+}
+
+th.views-field-field-name-value {
+  display: none;
+  border: none;
+}
+
+tbody th {
+  border-top: none;
+  border-bottom: none;
+}
+
+#pid-pathogens-eg tbody {
+  border: none;
+}
+
+/* Alternating row background styles */
+.page-query tr.odd,
+.page-query tr.odd td {
+  background-color: #fefded;
+  border-bottom: none;
+  border-top: none;
+}
+
+.page-query tr.even,
+.page-query tr.even td {
+  background-color: #f6f4da;
+  border-bottom: none;
+  border-top: none;
+}
+
+td.active {
+}
+
+tr.drag td,
+tr.drag-previous td {
+  color: #000;
+}
+
+
+/* Maintenance Page
+/-------------------------------------------------------------- */
+/* Maintenance page tpl file in Fusion Core has simplified layout, but you can
+  also add specific styles, such as a background, just for your offline page */
+.in-maintenance  {
+}
+
+
+/*--------------------------------------------------------------*/
+/* Module styles
+/-------------------------------------------------------------- */
+
+
+/* Book
+/-------------------------------------------------------------- */
+.book-navigation .menu {
+  border-top: 1px solid #ccc;
+}
+
+.book-navigation .page-links {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* Comments
+/-------------------------------------------------------------- */
+/* Style for each individual comment */
+div.comment {
+}
+
+/* Subject (title) of each comment */
+div.comment h3.title {
+}
+
+/* Links (edit, reply, delete) for each comment */
+div.comment div.links a,
+div.comment ul.links a {
+}
+
+/* Alternating styles for even/odd comments */
+.comments div.odd {
+  background-color: #fff;
+}
+
+.comments div.even {
+  background-color: #eee;
+}
+
+/* A special highlight style for a comment by the author of the node */
+.comments div.comment-by-author {
+  background-color: #ddd;
+}
+
+/* Comment signatures */
+.signature {
+  border-top: 1px solid #d6ddb9;
+}
+
+/* User avatars in comments */
+.comment-wrapper .picture img {
+}
+
+
+/* Forum
+/-------------------------------------------------------------- */
+#forum .description {
+}
+
+.forum-topic-navigation {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+
+/* Poll
+/-------------------------------------------------------------- */
+div.poll div.bar {
+  background-color: #ddd;
+}
+
+div.poll div.bar div.foreground {
+  background-color: #999;
+}
+
+
+/* Profiles
+/-------------------------------------------------------------- */
+.profile .picture {
+  float: none;
+}
+
+/* Styles for sub-headings on user profiles */
+.profile dt {
+  background-color: #ccc;
+}
+
+
+/* Ubercart - catalog
+/-------------------------------------------------------------- */
+
+/* Horizontal list of subcategories in catalog */
+ul.uc-categories {
+}
+
+.uc-categories li a {
+  font-weight: bold;
+  padding: 0 5px 0 3px;
+}
+
+strong {
+ font-size: 110%;
+ color: #4f2412;
+}
+
+/* Product and category names */
+.catalog-grid-title a:link,
+.catalog-grid-title a:visited,
+.category a:link,
+.category a:visited {
+}
+
+.catalog-grid-title a:hover,
+.catalog-grid-title a:focus,
+.category a:hover,
+.category a:focus {
+}
+
+/* Sell price in Ubercart catalog */
+.category-grid-products .catalog-grid-sell-price {
+}
+
+.gene-item ul {
+ list-style: none outside none;
+ margin-left: 0px;
+}
+/* Ubercart - add to cart buttons
+/-------------------------------------------------------------- */
+
+/* Add to cart buttons */
+input.node-add-to-cart,
+input.list-add-to-cart {
+}
+
+/* Hover and focus styles, with .hover class added for IE6 support */
+input.node-add-to-cart:hover,
+input.node-add-to-cart.hover,
+input.node-add-to-cart:focus,
+input.list-add-to-cart:hover,
+input.list-add-to-cart.hover,
+input.list-add-to-cart:focus {
+}
+
+/* Ubercart - product nodes
+/-------------------------------------------------------------- */
+
+#field-group {
+}
+
+#price-group {
+}
+
+/* Product images */
+.product-image a img {
+}
+
+.product-image a:hover img,
+.product-image a:focus img {
+}
+
+/* Display price on full product nodes */
+.full-node .product-group .uc-price-display {
+}
+
+/* Product attributes on full nodes */
+.full-node .product-group .attributes {
+}
+
+/* Ubercart - general / checkout
+/-------------------------------------------------------------- */
+
+/* For optional "Powered by Ubercart" footer message */
+#store-footer {
+}
+
+#store-footer a:link,
+#store-footer a:visited {
+}
+
+/* View cart/Checkout links in Ubercart cart block */
+.cart-block-summary-links ul.links li a {
+}
+
+.cart-block-summary-links ul.links li.cart-block-checkout a:link,
+.cart-block-summary-links ul.links li.cart-block-checkout a:visited {
+}
+
+/* Key checkout process buttons: Checkout, Continue, and Submit Order */
+#uc-cart-view-form #edit-checkout,
+#uc-cart-checkout-form #edit-continue,
+#uc-cart-checkout-review-form #edit-submit {
+}
+
+/* Table on final order review page */
+.order-review-table {
+}
+
+#cart-form-products table th {
+  border-bottom: 3px solid #dec2c3;
+}
+
+
+/* Skinr
+/-------------------------------------------------------------- */
+
+/* This is a sample Skinr style to get you started. See fusion_starter.info */
+.fusion-example-stylename .inner {
+  /* When setting the background color, also set foreground colors for text and
+    links, even if it's similar to the default body style. Remember, this block
+    style may be used in regions with other foreground colors, thus making text
+    invisible if left unspecified */
+  background-color: #ccc;
+  color: #000;
+  /* All padding and borders should go on the .inner div, so as not to break
+    the widths of the grid */
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+
+/*GULAM CSS ADDITION*/
+
+
+/*.logo {
+  width: 200px; 
+  height:90px; 
+  color: red; 
+  background-image: url(/sites/phytopathdb.org/files/images/phytopathlogo.png); 
+  background-repeat:no-repeat; 
+  margin-top:10px;
+}
+*/
+
+ul.nice-menu li{margin-right : 7px; border:0; background-image: url(/sites/phytopathdb.org/files/images/menu_grad.png); background-color:#333;}
+
+ul.nice-menu a {
+  padding: 0.3em 5px 0.3em 5px; color:#fff;border:0;padding:5px 5px; font-size:1.2em;
+
+}
+ul.nice-menu a:hover {background-color:#333; color:#fff; text-decoration: none;
+
+}
+#edit-search-block-form-3-wrapper label{display:none;}
+
+.form-item {
+  overflow: visible;
+}
+
+.form-autocomplete {
+  overflow: visible;
+}
+
+#autocomplete {
+  z-index: 1000000;
+  -webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -moz-border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  background: #faf8e7;
+  width: auto !important;
+}
+
+#autocomplete li {
+  background: #faf8e7;
+} 
+
+.field-field-newsimage{float:right;padding:5px;}
+
+.views-field-title {font-size:1.4em;font-weight:bold;}
+
+.views-field-field-event-date-value{padding-top:5px;}
+
+.views-field-field-newsimage-fid{float:right;padding:5px;border:1px solid #ccc;}
+
+/*.views-field-teaser{padding-bottom:20px;}
+.main-inner{clear:both;}
+
+/*Helder CSS Addition*/
+
+div.field-field-phylum div.field-items {
+  
+}
+
+.views-field-field-picture-fid {
+  float : left;
+  width : 110px;
+  height: 100px;
+}
+
+#pid-content-contact-us h2.pane-title {
+  border-bottom-width: 1px;
+  border-bottom-style: inset;
+  border-bottom-color: #901818;
+  color: #278700;
+  font-size: 150%;
+}
+
+div.pane-pathogen-view div.views-field-field-name-value {
+  font-size : 1.2em;
+  font-weight:bold;
+  text-align : center;
+  font-style: italic;
+}
+
+div.region-rounded-shadow-pathogen-node-view div.field-field-name{
+  font-size : 1.5ema;
+  font-weight: bold;
+  font-style: italic; 
+}
+
+div.region-rounded-shadow-pathogen-node-view h2.pane-title{
+  font-size : 1.1em;
+  font-weight: bold; 
+  font-style: italic;
+}
+
+div.region-rounded-shadow-pathogen-node-view img.imagefield{
+  float : right;
+}
+
+div.pane-pathogen-list-view div.views-field-field-name-value  {
+  font-size : 1.2em;
+  font-weight:bold;
+  text-align : left;
+}
+
+div.pane-pathogen-list-view .views-field-field-name-value  {
+  font-size : 1.2em;
+  font-weight:bold;
+  text-align : left;
+}
+
+.views-field-field-structure-fid {
+  text-align : center;
+}
+
+/*.pane-pathogen-list-view p {
+   text-align : left;
+}
+*/
+
+.views-field-field-inst-logo-fid {
+  
+}
+
+div.panel-col-first img.linkimagefield-field_inst_logo {
+  margin-top : 20px;
+  margin-left : 55px;
+  float: center;
+}
+
+div.panel-col-last img.linkimagefield-field_inst_logo {
+  margin-top : 20px;
+  margin-left : 130px;
+  float: center;
+}
+
+div.view-dom-id-3 img.linkimagefield-field_inst_logo {
+  margin-top : 20px;
+}
+
+/*div.view-display-id-page_1 {
+  border-right-style : solid; 
+}
+*/
+
+.breadcrumb {display: none;}
+
+/*ul.nice-menu li.active-trail a.active {
+  color: #010101;
+}
+*/
+
+ul.nice-menu a.active {
+  color: #010101;
+}
+
+.views-field-field-inst-name-value {
+  font-size : 1.2em;
+  font-weight : bold;
+}
+
+#content-tabs-inner {
+  border-bottom-width: 1px;
+  border-bottom-style: inset;
+  border-bottom-color: #901818;
+  font-size: 110%;
+  font-color: #278700;
+  font-weight: bold;
+
+} 
+
+
+body.page-search div.content-tabs {
+  display: none;
+}
+
+body.page-search dt.title a {
+  pointer-events: none;
+  cursor: default;
+  color : #901818;
+  font-weight : bold;
+}
+
+.search-form input {
+  margin-top : 3px;
+}
+
+body.page-search h1.title {
+  display : none;
+}
+
+body.page-search h2.title {
+  color : #278700;
+  font-size : 142.85%;
+  border-bottom-width : 1px;
+  border-bottom-style : inset ;
+  border-bottom-color : #901818;
+  margin-top : 20px;
+  margin-bottom : 20px;
+}
+
+body.page-search div.content-group div.form-item {
+  display : none;
+}
+
+body.page-search div.content-region-inner {
+  background-color : #f6f4da;
+  padding-left : 20px; 
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-bottom : 30px;
+  -webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -moz-border-radius: 10px;
+}
+
+#pid-query-builder div.content-region-inner { 
+  background-color : #f6f4da;
+  padding-left : 20px;
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-bottom : 30px;
+  -webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -moz-border-radius: 10px;
+  overflow: visible;
+}
+
+#content-inner , #content-group , #main-content-inner , #main-content, #main-inner, #main, #main-wrapper, #main-group  {
+  overflow: visible;
+}
+
+#content-region {
+  overflow: visible;
+}
+
+#content-region-inner {
+  overflow: visible;
+}
+
+#content-group-inner {
+  overflow: visible;
+}
+
+#header-group {
+  overflow: auto;
+}
+
+body.page-query div.content-region-inner {
+  background-color : #f6f4da;
+  padding-left : 20px;
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-bottom : 30px;
+  -webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -moz-border-radius: 10px;
+  padding-top:10px;
+  padding-bottom:25px;
+}
+
+/*
+#biomart-species-list .form-item label.option{
+    float: left;
+    width: 30%;
+}
+*/
+
+div.pane-pathogen-list-view .views-field-field-picture-fid {
+  float: center;
+  width: 50px;
+  height: 50px;
+}
+
+.panel-3col-33 {
+ width : 95%;
+ margin-right : auto;
+ margin-left : auto;
+}
+
+.view-dom-id-3 {
+ width : 100%;
+ margin-right : auto;
+ margin-left : auto;
+}
+
+.panel-3col-33 .panel-col {
+  width: 10%
+}
+
+.panel-3col-33 .panel-col-first {
+  width: 45%
+}
+
+.panel-3col-33 .panel-col-last {
+  width: 45%
+}
+
+body.node-type-pathogen div.panel-display {
+  background-color : #f6f4da;
+  padding-left : 20px;
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-bottom : 30px;
+  -webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #888888;
+  -moz-border-radius : 10px;
+}
+
+body.node-type-pathogen div.panel-display div.field-field-name {
+  margin-top : 30px;
+  margin-bottom : 20px;
+  color : #278700;
+  font-size : 170%;
+  font-weight : bold;
+  text-shadow : #888888 1px 1px 2px;
+}
+
+body.node-type-pathogen div.panel-display div.field-field-picture {
+  margin-top : 35px;
+  margin-right : 35px;
+  float : right;
+}
+
+body.node-type-pathogen div.panel-display h2.block-title {
+  margin: 0.5em 0 0 0;
+  font-size : 110%;
+  color : #901818;
+}
+
+body.node-type-pathogen div.panel-display p {
+  margin: 0;
+}
+
+body.node-type-pathogen div.panel-display div.pane-pathogen-group-stats {
+ margin-right : 30px;
+}
+
+body.node-type-pathogen div.panel-display fieldset {
+  border-color : #f5f5dc;
+}
+
+body.node-type-pathogen div.panel-display fieldset.group-phylogeny {
+  margin: 5px 0 ;
+}
+
+body.node-type-pathogen div.panel-display fieldset.group-stats {
+  margin: 5px 0 25px 0;
+}
+
+body.node-type-pathogen div.panel-display div.field-field-kingdom {
+ float : left;
+ margin-right : 20px
+}
+
+body.node-type-pathogen div.panel-display div.field-field-phylum {
+ float : left;
+ margin-right : 20px;
+}
+
+body.node-type-pathogen div.panel-display div.field-field-order {
+ float : left;
+}
+
+body.node-type-pathogen div.panel-display div.field-field-genome-size {
+ float : left;
+ margin-right : 20px;
+}
+
+body.node-type-pathogen div.panel-display div.field-field-number-of-genes {
+ float : left;
+}
+
+div.views-field-field-gene-name-value {
+  font-size : 1.2em;
+  font-weight: bold;
+  text-align: center;
+  color: #901818;
+  margin-top: 20px;
+}
+
+div.pane-views div.views-field-title {
+  color: #278700;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #901818;
+}
+
+div.pane-views div.field-content {
+  margin-bottom: 0px;
+}
+
+small.species {
+  font-style : italic;
+}
+
+div.footer h2.title {
+  display : none;
+}
+
+div.footer {
+  text-align : center;
+}
+
+#footer {
+  font-size : 80%;
+}
+
+#block-nice_menus-1 {
+  width : 700px;
+}
+
+#block-block-2 {
+  width : 100px;
+  z-index : 100; 
+}
+
+div.block-search div.inner {
+  margin-right : 2px; 
+}
+
+.search-results dd {
+  margin-bottom: 0.4em;
+}
+
+
+#block-search-0 {
+  width : 200px;
+}
+
+div.grid16-6 div.inner {
+ margin-left : 0px;
+ position : relative;
+ top : -3px;
+ z-index : 10;
+ font-size: 95%;
+ font-weight: bold;
+}
+
+#pid-content-contact-us div.region-rounded-shadow-pathogen-node-view  h2.pane-title {
+  font-style: normal;
+  font-size: 140%;
+}
+
+div.backtopathogens h2.block-title{
+  display : none;
+}
+
+div.backtopathogens div.pane-content {
+  float : right;
+  margin-right : 20px;
+  margin-bottom : 20px;
+}
+
+.page-batch {
+ color: #278700;
+}
+
+.page-batch .progress .filled {
+ background: #278700;
+ border-bottom: 0.5em solid #278700;
+}
+
+.page-batch .message {
+  visibility: hidden;
+}
+
+.form-item {
+  font-size: 13px;
+}
+
+.domains label {
+  margin-bottom: 3px;
+}
+
+th.select-all input.form-checkbox  {
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+
+/* {
+  border: 1px solid;
+}
+*/
+
+.tableHeader-processed {
+  height: 20px;
+}
+
+
+/*
+[name=add] {
+ line-height: 22px;
+ width: 24px;
+ height: 20px;
+ padding-bottom: 10px !important;
+ text-align:center;
+ vertical-align:middle;
+}
+
+[name=remove] {
+ width: 24px;
+ height: 20px;
+ padding: 0px;
+ text-align:center; 
+ vertical-align:middle;
+}
+*/
+
+input /*Content follows box model*/
+{ 
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+}
+
+
+
+
+
