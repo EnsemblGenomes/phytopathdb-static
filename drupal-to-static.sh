@@ -86,7 +86,7 @@ find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/((src\s*=\s*|hre
 
 # add comment to all html files
 echo "Adding notice to all pages..."
-find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/(<head[\s>])/<\!-- static copy: $(date) -->\n${NOTICE_REGEX}\n\1/g";
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/(<body[^>]+>)/\1\n<\!-- static copy: $(date) -->\n${NOTICE_REGEX}/g";
 
 # create .htaccess
 echo "Creating .htaccess"
