@@ -9,7 +9,7 @@ SITE=www.phytopathdb.org
 BASE=.
 
 # the archive notice html, will get added to top of all pages
-NOTICE='<div style="padding:1em;margin:1em;border:1px solid #444;background:#ccc;color:#222;text-align:center">This site is no longer maintained and is provided for reference only. Some functionality or links may not work. Please contact helpdesk\@ensembl.org for all enquiries.</div>';
+NOTICE='<div style="padding:1em;margin:1em;border:1px solid #444;background:#ccc;color:#222;text-align:center">This site is no longer maintained and is provided for reference only. Some functionality or links may not work. For all enquiries please contact the <a href="http://www.ensembl.org/info/about/contact/index.html">Ensembl Helpdesk</a>.</div>';
 
 read -p "Spidering $SITE to $BASE/$SITE, 'y' to continue? " ANSWER;
 if [ "$ANSWER" != "y" ]; then exit; fi;
@@ -23,9 +23,9 @@ echo "Domain = $DOMAIN";
 echo "Directory = $DIRECTORY"
 
 # create regex version of above
-NOTICE_REGEX="${NOTICE////\/}"; # escape slashes
+NOTICE_REGEX="${NOTICE////\\/}"; # escape slashes
 NOTICE_REGEX="${NOTICE_REGEX//\"/\\\"}"; # escape quotes
-NOTICE_REGEX="${NOTICE_REGEX//./\.}"; # escape dots
+NOTICE_REGEX="${NOTICE_REGEX//./\\.}"; # escape dots
 
 DOMAIN_REGEX="https?:\/\/${DOMAIN//./\.}"; # escape dots, add protocol
 
