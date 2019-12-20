@@ -6,10 +6,10 @@ SITE=www.phytopathdb.org
 
 # output base directory, eg /var/www
 # site will be in a subfolder of this site according to SITE above, eg /var/www/local-prod-portals.biotnet.org
-BASE=/homes/nickl/dev/drupal/phytopath
+BASE=.
 
 # the archive notice html, will get added to top of all pages
-NOTICE='<div style="padding:1em;margin:1em;border:1px solid #444;background:#ccc;color:#222;text-align:center">This site is no longer maintained and is provided for reference only. Some functionality or links may not work. Please contact helpdesk@ensembl.org for all enquiries.</div>';
+NOTICE='<div style="padding:1em;margin:1em;border:1px solid #444;background:#ccc;color:#222;text-align:center">This site is no longer maintained and is provided for reference only. Some functionality or links may not work. Please contact helpdesk\@ensembl.org for all enquiries.</div>';
 
 read -p "Spidering $SITE to $BASE/$SITE, 'y' to continue? " ANSWER;
 if [ "$ANSWER" != "y" ]; then exit; fi;
