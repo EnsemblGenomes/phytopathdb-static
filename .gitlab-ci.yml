@@ -8,8 +8,9 @@ Build Image:
   image: docker
 
   script:
-    - docker build -t phytopathdb:${CI_COMMIT_REF_NAME} -f Dockerfile .
-    - docker push phytopathdb:${CI_COMMIT_REF_NAME}
+    - docker build -t ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA} -f Dockerfile .
+    - docker images
+    - docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}
   
   only:
   - deploy-k8s
