@@ -10,6 +10,9 @@ Build Image:
   script:
     - docker build -t phytopathdb:${CI_COMMIT_REF_NAME} -f Dockerfile
     - docker push phytopathdb:${CI_COMMIT_REF_NAME}
+  
+  only:
+  - deploy-k8s
 
 Deploy Staging:
   stage: deploy
@@ -19,3 +22,6 @@ Deploy Staging:
 
   script:
     - kubectl get ns
+
+  only:
+  - deploy-k8s
