@@ -1,0 +1,21 @@
+stages:
+  - build_image
+  - deploy
+
+
+Build Image:
+  stage: build_image
+  image: docker
+
+  script:
+    - docker build -t phytopathdb:${CI_COMMIT_REF_NAME} -f Dockerfile
+    - docker push phytopathdb:${CI_COMMIT_REF_NAME}
+
+Deploy Staging:
+  stage: deploy
+  image: dockerhub.ebi.ac.uk/kamal/deploy-tools:0.1
+  environment:
+    name: eg-static-staging
+
+  script:
+    - kubectl get ns
