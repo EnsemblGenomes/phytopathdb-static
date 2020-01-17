@@ -6,6 +6,9 @@ stages:
 Build Image:
   stage: build_image
   image: docker
+  services:
+    - docker:dind
+
   variables:
     DOCKER_TLS_CERTDIR: ""
 
@@ -18,7 +21,7 @@ Build Image:
     - docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}
   
   only:
-  - deploy-k8s
+   - deploy-k8s
 
 Deploy Staging:
   stage: deploy
@@ -30,4 +33,4 @@ Deploy Staging:
     - kubectl get ns
 
   only:
-  - deploy-k8s
+   - deploy-k8s
