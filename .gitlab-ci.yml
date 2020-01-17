@@ -8,7 +8,7 @@ Build Image:
   image: docker
 
   script:
-    - docker build -t phytopathdb:${CI_COMMIT_REF_NAME} -f Dockerfile
+    - docker build -t phytopathdb:${CI_COMMIT_REF_NAME} -f Dockerfile .
     - docker push phytopathdb:${CI_COMMIT_REF_NAME}
   
   only:
