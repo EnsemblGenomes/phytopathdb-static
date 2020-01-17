@@ -31,8 +31,11 @@ Deploy Staging:
 
   script:
     - kubectl get ns
+    - sed -i "s/<CI_PROJECT_PATH_SLUG>/${CI_PROJECT_PATH_SLUG}/g" phytopathdb_deployment.yaml
+    - sed -i "s/<CI_ENVIRONMENT_SLUG>/${CI_ENVIRONMENT_SLUG}/g" phytopathdb_deployment.yaml
     - sed -i "s/<VERSION>/${CI_COMMIT_SHORT_SHA}/g" phytopathdb_deployment.yaml
     - cat phytopathdb_deployment.yaml
-    - kubectl apply -f phytopathdb_deployment.yaml
+    #- kubectl apply -f phytopathdb_deployment.yaml
+
   only:
    - deploy-k8s

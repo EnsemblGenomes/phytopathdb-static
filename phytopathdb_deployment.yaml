@@ -7,6 +7,8 @@ metadata:
     app.gitlab.com/env: <CI_ENVIRONMENT_SLUG>
   namespace: eg-static
 spec:
+  imagePullSecrets:
+    - name: eg-static-pull-secrets
   replicas: 1
   template:
     metadata:
