@@ -18,7 +18,7 @@ spec:
       - name: phytopathdb-deployment
         image: <DOCKER_IMAGE>
         ports:
-        - containerPort: 8000
+        - containerPort: 80
         imagePullPolicy: Always
       imagePullSecrets:
         - name: eg-static-pull-secrets
