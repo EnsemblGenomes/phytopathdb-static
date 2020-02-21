@@ -2,6 +2,15 @@ stages:
   - build_image
   - deploy
 
+.deploy:
+  stage: deploy
+  image: dockerhub.ebi.ac.uk/kamal/deploy-tools:0.1
+
+  script:
+    - sed -i "s/<CI_PROJECT_PATH_SLUG>/${CI_PROJECT_PATH_SLUG}/g" phytopathdb_deployment.yaml
+    - sed -i "s/<CI_ENVIRONMENT_SLUG>/${CI_ENVIRONMENT_SLUG}/g" phytopathdb_deployment.yaml
+    - sed -i "s/<VERSION>/${CI_COMMIT_SHORT_SHA}/g" phytopathdb_deployment.yaml
+    - kubectl apply -f phytopathdb_deployment.yaml
 
 Build Image:
   stage: build_image
@@ -22,17 +31,23 @@ Build Image:
   only:
    - master
 
-Deploy Staging:
-  stage: deploy
-  image: dockerhub.ebi.ac.uk/kamal/deploy-tools:0.1
+Live:EHK:
+  extends: .deploy
   environment:
     name: eg-static-staging
+  only:
+   - master
 
-  script:
-    - sed -i "s/<CI_PROJECT_PATH_SLUG>/${CI_PROJECT_PATH_SLUG}/g" phytopathdb_deployment.yaml
-    - sed -i "s/<CI_ENVIRONMENT_SLUG>/${CI_ENVIRONMENT_SLUG}/g" phytopathdb_deployment.yaml
-    - sed -i "s/<VERSION>/${CI_COMMIT_SHORT_SHA}/g" phytopathdb_deployment.yaml
-    - kubectl apply -f phytopathdb_deployment.yaml
+Live:WP-HX:
+  extends: .deploy
+  environment:
+    name: wp-hx-eg-static
+  only:
+   - master
 
+Live:WP-HH:
+  extends: .deploy
+  environment:
+    name: wp-hh-eg-static
   only:
    - master
