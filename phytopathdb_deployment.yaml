@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: phytopathdb-deployment
-        image: dockerhub.ebi.ac.uk/kamal/phytopathdb-static:<VERSION>
+        image: <DOCKER_IMAGE>
         ports:
         - containerPort: 80
         imagePullPolicy: Always
