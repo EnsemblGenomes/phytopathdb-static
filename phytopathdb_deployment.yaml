@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata: 
+  name: phytopathdb-deployment
+  annotations:
+    app.gitlab.com/app: <CI_PROJECT_PATH_SLUG>
+    app.gitlab.com/env: <CI_ENVIRONMENT_SLUG>
+  namespace: eg-static
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: phytopathdb
+        RUP: nickl
+    spec:
+      containers:
+      - name: phytopathdb-deployment
+        image: dockerhub.ebi.ac.uk/kamal/phytopathdb-static:<VERSION>
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+      imagePullSecrets:
+        - name: eg-static-pull-secrets
