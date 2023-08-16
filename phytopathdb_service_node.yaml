@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: phytopathdb-svc
+  name:  phytopathdb-svc
   labels:
-    app: phytopathdb-svc
+     ensembl.web.app.name: phytopathdb
 spec:
   selector:
-    app: phytopathdb
-  type: NodePort
+     ensembl.web.app.name: phytopathdb
+  type: ClusterIP
   ports:
     - port: 80
       protocol: TCP

@@ -7,11 +7,9 @@ variables:
 
 .deploy:
   stage: deploy
-  image: dockerhub.ebi.ac.uk/kamal/deploy-tools:0.1
+  image: dockerhub.ebi.ac.uk/ensembl-web/deploy-tools:latest
 
   script:
-    - sed -i "s/<CI_PROJECT_PATH_SLUG>/${CI_PROJECT_PATH_SLUG}/g" phytopathdb_deployment.yaml
-    - sed -i "s/<CI_ENVIRONMENT_SLUG>/${CI_ENVIRONMENT_SLUG}/g" phytopathdb_deployment.yaml
     - sed -i "s#<DOCKER_IMAGE>#${DOCKER_IMAGE}#g" phytopathdb_deployment.yaml
     - kubectl apply -f phytopathdb_deployment.yaml
 
@@ -34,23 +32,16 @@ Build Image:
   only:
    - master
 
-Live:EHK:
+Live:WP41-HX:
   extends: .deploy
   environment:
-    name: eg-static-staging
+    name: wp41-hx-static
   only:
    - master
 
-Live:WP-HX:
+Live:WP40-HL:
   extends: .deploy
   environment:
-    name: wp-hx-eg-static
-  only:
-   - master
-
-Live:WP-HH:
-  extends: .deploy
-  environment:
-    name: wp-hh-eg-static
+    name: wp40-hl-static
   only:
    - master
